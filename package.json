@@ -1,0 +1,51 @@
+{
+  "name": "constile-mcp",
+  "version": "0.1.1",
+  "mcpName": "app.constile/mcp",
+  "description": "An MCP server that gives an AI assistant a read_article tool, which handles Constile's sponsored access with the person's saved choice.",
+  "license": "MIT",
+  "author": "CCC2C Inc. <hello@constile.app>",
+  "homepage": "https://constile.app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Constile/constile-mcp.git"
+  },
+  "bugs": {
+    "email": "hello@constile.app"
+  },
+  "keywords": [
+    "constile",
+    "mcp",
+    "model context protocol",
+    "ai agents",
+    "sponsored access"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "constile-mcp": "dist/constile-mcp.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "vitest run",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "zod": "4.6.7",
+    "constile-agent-sdk": "0.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "esbuild": "0.28.2",
+    "typescript": "5.9.3",
+    "vitest": "4.1.12"
+  }
+}
