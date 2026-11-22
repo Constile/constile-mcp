@@ -6,12 +6,12 @@
   "websiteUrl": "https://constile.app/developers",
   "repository": { "url": "https://github.com/Constile/constile-mcp", "source": "github" },
   "icons": [{ "src": "https://constile.app/img/icon-512.png", "mimeType": "image/png", "sizes": ["512x512"] }],
-  "version": "0.1.1",
+  "version": "0.1.2",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "constile-mcp",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "transport": { "type": "stdio" },
       "environmentVariables": [
         {
